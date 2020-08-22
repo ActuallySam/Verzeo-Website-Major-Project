@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title>Infinix</title>
+        <link rel="stylesheet" href = "/css/index.css">
+    </head>
+
+    <style>
+        a{
+            text-decoration: none;
+        }
+        .nav1, .nav2{
+            text-align: right;
+            padding-top: 50px;
+            font: 50px;
+        }
+        .heads1, .sect, .grid{
+            width: 1050px;
+            margin: 0 auto;
+        }
+        .Hey{
+            font-size: 44px;
+            float: left;
+            padding-left: 30px;
+            letter-spacing: .6px;
+            text-transform: uppercase; 
+            line-height: 44px;
+            font-weight: 100;
+        }
+        .ID{
+            padding-top: 125px;
+            width: 960px;
+            margin:0 auto;
+            padding-left: 555px;
+        }
+        .email{
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-right: 65px;
+            padding-left: 65px;
+        }
+        .pass{
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-right: 65px;
+            padding-left: 65px;
+        }
+        .courses{
+            padding-left: 10px;
+            padding-right: 5px;
+        }
+        .div1{
+            padding-left: 120px;
+            padding-top: 30px;
+        }
+        .terms{
+            padding-left: 75px;
+        }
+        .butto{
+            padding-top: 20px;
+            padding-left: 95px;
+        }
+        .butt{
+            color: #ffffff;
+        }
+    </style>
+
+    <body>
+        <header class = "heads1">
+            <h1 class = "Hey">
+                <a href = "index.html"> Infinix </a>
+            </h1>
+
+            <nav class="nav1">
+                <a href = "index.html"> Home |</a>
+                <a href = "courses.html"> Courses |</a>
+                <a href = "about.html"> About Us </a>
+            </nav>
+        </header>
+
+        <form action="connect.php" method="POST">
+            <section class = "sect1">
+                <div class = "ID Pass">
+                    <label for="Email"><h2>E-mail: </h2></label>
+                    <p><input id="Email" name = "email" placeholder="                         Enter you E-mail ID" type="email" size = "45" class = "email" required>
+
+                    <br> <br>
+
+                    <label for="Password"><h2>Password: </h2></label></p>
+                    <input id="Password" name = "password" placeholder="                   Password" type="password" class = "pass" minlength="7" maxlength = "15" size = "30" required>
+
+                    <br><br>
+
+                    <div class = "div1">
+                        <select name = "Courses" name="course" class="courses">
+                            <option>-- Choose a course--</option>
+                            <option>Web Development</option>
+                            <option>Artificial Intelligence</option>
+                            <option>Deep Learning</option>
+                            <option>Machine Learning</option>
+                            <option>Cloud Computing</option>
+                        </select>
+                    </div>    
+
+                    <br> <br>
+
+                    <label for = "Terms" class="terms">I agree to the Terms and Conditions</label>
+                    <input id = "Terms" type="checkbox" required>
+                    </input>
+
+                        <br>
+                        <br>
+                       
+                        <div class = "butto">
+                                <input type = "submit" value = "Submit" class="butt">
+                        </div>   
+                </div>
+            </section>
+        </form>
+
+    </body>
+</html>
