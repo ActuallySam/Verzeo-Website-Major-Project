@@ -1,2 +1,2 @@
-# Verzeo Major Project
+# Verzeo Website Major Project
  
